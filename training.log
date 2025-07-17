@@ -1,0 +1,103 @@
+2025-05-16 01:32:59,799 - INFO - Downloaded NLTK stopwords and wordnet
+2025-05-16 01:32:59,806 - INFO - Loading data...
+2025-05-16 01:33:00,009 - INFO - Preprocessing text...
+2025-05-16 01:33:06,945 - INFO - Training data shape: (17999,)
+2025-05-16 01:33:06,945 - INFO - Testing data shape: (2000,)
+2025-05-16 01:33:06,955 - INFO - Emotion classes: ['anger' 'fear' 'joy' 'love' 'sadness' 'surprise']
+2025-05-16 01:33:06,959 - INFO - Extracting features with TF-IDF...
+2025-05-16 01:33:07,225 - INFO - Training Support Vector Machine (Linear)...
+2025-05-16 01:37:22,049 - INFO - Evaluating Support Vector Machine (Linear)...
+2025-05-16 01:37:24,484 - INFO - Preparing to save Support Vector Machine (Linear): Type=<class 'sklearn.svm._classes.SVC'>, Has predict=True
+2025-05-16 01:37:24,493 - INFO - Model saved as best_model_support_vector_machine_(linear).pkl
+2025-05-16 01:37:24,493 - INFO - Training Logistic Regression...
+2025-05-16 01:37:24,875 - INFO - Evaluating Logistic Regression...
+2025-05-16 01:37:24,917 - INFO - Preparing to save Logistic Regression: Type=<class 'sklearn.linear_model._logistic.LogisticRegression'>, Has predict=True
+2025-05-16 01:37:24,919 - INFO - Model saved as best_model_logistic_regression.pkl
+2025-05-16 01:37:24,919 - INFO - Training Random Forest...
+2025-05-16 01:37:51,296 - INFO - Evaluating Random Forest...
+2025-05-16 01:37:51,519 - INFO - Preparing to save Random Forest: Type=<class 'sklearn.ensemble._forest.RandomForestClassifier'>, Has predict=True
+2025-05-16 01:37:51,659 - INFO - Model saved as best_model_random_forest.pkl
+2025-05-16 01:37:51,660 - INFO - Training Naive Bayes...
+2025-05-16 01:37:51,723 - INFO - Evaluating Naive Bayes...
+2025-05-16 01:37:51,749 - INFO - Preparing to save Naive Bayes: Type=<class 'sklearn.naive_bayes.MultinomialNB'>, Has predict=True
+2025-05-16 01:37:51,750 - INFO - Model saved as best_model_naive_bayes.pkl
+2025-05-16 01:37:51,750 - INFO - Training Gradient Boosting...
+2025-05-16 01:38:48,506 - INFO - Evaluating Gradient Boosting...
+2025-05-16 01:38:48,559 - INFO - Preparing to save Gradient Boosting: Type=<class 'sklearn.ensemble._gb.GradientBoostingClassifier'>, Has predict=True
+2025-05-16 01:38:48,601 - INFO - Model saved as best_model_gradient_boosting.pkl
+2025-05-16 01:38:48,603 - INFO - Model metrics saved as model_metrics.json
+2025-05-16 01:38:48,604 - INFO - Best Model: Support Vector Machine (Linear) with F1 score 0.8883
+2025-05-16 01:38:48,705 - INFO - TF-IDF vectorizer saved as tfidf_vectorizer.pkl
+2025-05-16 01:38:48,705 - INFO - Detailed Classification Report for Support Vector Machine (Linear):
+2025-05-16 01:38:49,473 - INFO - Confusion matrix saved as confusion_matrix_support_vector_machine_(linear).png
+2025-05-16 01:38:49,887 - INFO - Model F1 score comparison chart saved as model_comparison_f1.png
+2025-05-16 01:38:50,138 - INFO - Training time comparison chart saved as training_time_comparison.png
+2025-05-16 01:38:50,138 - INFO - Performing hyperparameter tuning for Support Vector Machine (Linear)...
+2025-05-16 01:47:17,704 - INFO - Best parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'linear'}
+2025-05-16 01:47:17,704 - INFO - Best cross-validation score: 0.8826
+2025-05-16 01:47:20,202 - INFO - Tuned model F1 score: 0.8883
+2025-05-16 01:47:20,202 - INFO - Tuned model Accuracy: 0.8895
+2025-05-16 01:47:20,202 - INFO - Improvement over original model: 0.0000
+2025-05-16 01:47:20,202 - INFO - Preparing to save Tuned Best Model: Type=<class 'sklearn.svm._classes.SVC'>, Has predict=True
+2025-05-16 01:47:20,206 - INFO - Tuned best model saved as tuned_best_model.pkl
+2025-05-16 01:47:20,207 - INFO - Updated model metrics saved as model_metrics.json
+2025-05-16 01:47:20,207 - INFO - Model comparison complete!
+2025-05-16 03:21:47,077 - INFO - Downloaded NLTK stopwords and wordnet
+2025-05-16 03:21:47,079 - INFO - Loading data...
+2025-05-16 03:21:47,125 - INFO - Preprocessing text...
+2025-05-16 04:32:06,750 - INFO - Downloaded NLTK stopwords and wordnet
+2025-05-16 04:32:06,759 - INFO - Loading data...
+2025-05-16 04:32:06,889 - INFO - Preprocessing text...
+2025-05-16 04:32:13,812 - INFO - Training data shape: (17999,)
+2025-05-16 04:32:13,813 - INFO - Testing data shape: (2000,)
+2025-05-16 04:32:13,827 - INFO - Emotion classes: ['anger' 'fear' 'joy' 'love' 'sadness' 'surprise']
+2025-05-16 04:32:13,835 - INFO - Deleted old file: best_model_gradient_boosting.pkl
+2025-05-16 04:32:13,836 - INFO - Deleted old file: best_model_logistic_regression.pkl
+2025-05-16 04:32:13,837 - INFO - Deleted old file: best_model_naive_bayes.pkl
+2025-05-16 04:32:13,869 - INFO - Deleted old file: best_model_random_forest.pkl
+2025-05-16 04:32:13,871 - INFO - Deleted old file: best_model_support_vector_machine_(linear).pkl
+2025-05-16 04:32:13,872 - INFO - Deleted old file: confusion_matrix_support_vector_machine_(linear).png
+2025-05-16 04:32:13,872 - INFO - Deleted old file: model_comparison_f1.png
+2025-05-16 04:32:13,873 - INFO - Deleted old file: model_metrics.json
+2025-05-16 04:32:13,874 - INFO - Deleted old file: tfidf_vectorizer.pkl
+2025-05-16 04:32:13,874 - INFO - Deleted old file: training_time_comparison.png
+2025-05-16 04:32:13,876 - INFO - Deleted old file: tuned_best_model.pkl
+2025-05-16 04:32:13,876 - INFO - Extracting features with TF-IDF...
+2025-05-16 04:32:14,238 - INFO - Training Support Vector Machine (Linear)...
+2025-05-16 04:35:03,724 - INFO - Evaluating Support Vector Machine (Linear)...
+2025-05-16 04:35:06,035 - INFO - Preparing to save Support Vector Machine (Linear): Type=<class 'sklearn.svm._classes.SVC'>, Has predict=True
+2025-05-16 04:35:06,039 - INFO - Model saved as best_model_support_vector_machine_(linear).pkl
+2025-05-16 04:35:06,039 - INFO - Training Logistic Regression...
+2025-05-16 04:35:06,436 - INFO - Evaluating Logistic Regression...
+2025-05-16 04:35:06,465 - INFO - Preparing to save Logistic Regression: Type=<class 'sklearn.linear_model._logistic.LogisticRegression'>, Has predict=True
+2025-05-16 04:35:06,467 - INFO - Model saved as best_model_logistic_regression.pkl
+2025-05-16 04:35:06,467 - INFO - Training Random Forest...
+2025-05-16 04:35:31,884 - INFO - Evaluating Random Forest...
+2025-05-16 04:35:32,106 - INFO - Preparing to save Random Forest: Type=<class 'sklearn.ensemble._forest.RandomForestClassifier'>, Has predict=True
+2025-05-16 04:35:32,190 - INFO - Model saved as best_model_random_forest.pkl
+2025-05-16 04:35:32,190 - INFO - Training Naive Bayes...
+2025-05-16 04:35:32,234 - INFO - Evaluating Naive Bayes...
+2025-05-16 04:35:32,259 - INFO - Preparing to save Naive Bayes: Type=<class 'sklearn.naive_bayes.MultinomialNB'>, Has predict=True
+2025-05-16 04:35:32,260 - INFO - Model saved as best_model_naive_bayes.pkl
+2025-05-16 04:35:32,260 - INFO - Training Gradient Boosting...
+2025-05-16 04:36:27,500 - INFO - Evaluating Gradient Boosting...
+2025-05-16 04:36:27,549 - INFO - Preparing to save Gradient Boosting: Type=<class 'sklearn.ensemble._gb.GradientBoostingClassifier'>, Has predict=True
+2025-05-16 04:36:27,572 - INFO - Model saved as best_model_gradient_boosting.pkl
+2025-05-16 04:36:27,573 - INFO - Model metrics saved as model_metrics.json
+2025-05-16 04:36:27,573 - INFO - Best Model: Support Vector Machine (Linear) with F1 score 0.8883
+2025-05-16 04:36:27,681 - INFO - TF-IDF vectorizer saved as tfidf_vectorizer.pkl
+2025-05-16 04:36:27,681 - INFO - Detailed Classification Report for Support Vector Machine (Linear):
+2025-05-16 04:36:29,939 - INFO - Confusion matrix saved as confusion_matrix_support_vector_machine_(linear).png
+2025-05-16 04:36:30,302 - INFO - Model F1 score comparison chart saved as model_comparison_f1.png
+2025-05-16 04:36:30,734 - INFO - Training time comparison chart saved as training_time_comparison.png
+2025-05-16 04:36:30,734 - INFO - Performing hyperparameter tuning for Support Vector Machine (Linear)...
+2025-05-16 04:44:48,242 - INFO - Best parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'linear'}
+2025-05-16 04:44:48,242 - INFO - Best cross-validation score: 0.8826
+2025-05-16 04:44:50,715 - INFO - Tuned model F1 score: 0.8883
+2025-05-16 04:44:50,715 - INFO - Tuned model Accuracy: 0.8895
+2025-05-16 04:44:50,715 - INFO - Improvement over original model: 0.0000
+2025-05-16 04:44:50,715 - INFO - Preparing to save Tuned Best Model: Type=<class 'sklearn.svm._classes.SVC'>, Has predict=True
+2025-05-16 04:44:50,720 - INFO - Tuned best model saved as tuned_best_model.pkl
+2025-05-16 04:44:51,138 - INFO - Confusion matrix saved as confusion_matrix_tuned_best_model.png
+2025-05-16 04:44:51,360 - INFO - Updated model metrics saved as model_metrics.json
+2025-05-16 04:44:51,360 - INFO - Model comparison complete!
